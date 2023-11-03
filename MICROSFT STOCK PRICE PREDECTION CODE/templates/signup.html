@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div id="hero" class="hero overlay">
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator">Sign Up</h2>
+                    <form  action="/signup" method="POST">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="email">Name:</label>
+                                  <input type="text"  name="uname" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-20">
+                                <div class="form-group">
+                                  <label for="name">Phone number:</label>
+                                  <input type="text" name="uphone" class="form-control" id="password">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-20">
+                                <div class="form-group">
+                                  <label for="name">E-mail:</label>
+                                  <input type="email" name="username" class="form-control" id="password">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-20">
+                                <div class="form-group">
+                                  <label for="name">Password:</label>
+                                  <input type="password" class="form-control" name="upassword" id="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-20" >
+                            <button class="btn btn-green" style="background-color:black ;">Sign in</button>
+                        </div><br><br>
+                    </form>
+                </div>
+           
+      
+            </div><!-- /.form -->
+
+           
+            <center><div class="section-title" >
+              {% if msg %}
+              
+             <h4 style="color:rgb(14, 12, 12)" class="text-center heading-separator">  {{msg}} </h4>
+              {% endif %}
+        </div>
+      </center> 
+        </div><!-- /.hero-text -->
+    </div><!-- /.hero-content -->
+</div><!-- /.hero -->
+
+{% endblock %}

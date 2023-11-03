@@ -1,0 +1,43 @@
+{% extends 'adminbase.html' %}
+{% block body %}
+
+    <div id="hero" class="hero overlay subpage-hero contact-hero">
+        <div class="hero-content">
+            <div class="hero-text"><br><br><br><br>
+                <h2>ADD FAQ</h2>
+            
+                        <form action="/addfaq" method="POST"><br><br><br><br>
+                            <div class="form-group">
+                              <label for="message">Subject:</label>
+                              <input name="question" class="form-control" id="subject"></input>
+                            </div>
+                            <div class="form-group"><br><br>
+                              <label for="message">Message:</label>
+                              <textarea name="answer" class="form-control form-control-comment" id="message"></textarea>
+                            </div>
+                            <div class="text-center"><br><br>
+                                <button class="btn btn-green" style="background-color: black;">Submit</button>
+                            </div><br>
+                        </form>
+                        <center><div class="section-title" >
+                          {% if msg %}
+                         <h4 style="color:rgb(247, 243, 243)"> <b >{{msg}} </b> </h4>
+                          {% endif %}
+                    </div>
+                  </center> 
+                  <br>
+            </div><!-- /.hero-text -->
+        
+           
+        </div><!-- /.hero-content -->
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+
+        <section class="site-section subpage-site-section section-contact-us">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                       
+{% endblock %}

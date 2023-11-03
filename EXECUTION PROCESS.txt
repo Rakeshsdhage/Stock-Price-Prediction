@@ -1,0 +1,5 @@
+1.We need to open vs code and then open the code folder
+2.We have to open the file app.py to run the project 
+3.We have to run the file using run option
+4.Then We will get the local host http://127.0.0.1:5000 in the terminal 
+5.Using this local host,we can run the project in goggle chrome by just copy and pasting the local host http://127.0.0.1:5000.

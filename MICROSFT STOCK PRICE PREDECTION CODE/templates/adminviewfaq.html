@@ -1,0 +1,32 @@
+{% extends 'adminbase.html' %}
+{% block body %}
+<div id="hero" class="hero overlay subpage-hero contact-hero">
+    <div class="hero-content">
+        <div class="hero-text">
+          <br>
+          <br>
+            <h1>View faq</h1>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th> Question</th>
+                    <th>Answer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in rows %}
+                  <tr>
+                    <td>{{row['question']}}</td>
+                    <td>{{row['answer']}}</td>
+                  </tr> 
+                  {% endfor %}     
+                  
+                 
+                </tbody>
+              </table>
+            
+        </div><!-- /.hero-text -->
+    </div><!-- /.hero-content -->
+</div><!-- /.hero -->
+{% endblock %}

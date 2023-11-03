@@ -1,0 +1,5 @@
+1.Firstly we need to install python along with get pip.
+2.Then we need to install VS Code.
+3.We need To install Flask in VS Code.
+4.We need to install plotly,pandas in VS Code.
+5.Then we can run using app.py file in VS Code. 

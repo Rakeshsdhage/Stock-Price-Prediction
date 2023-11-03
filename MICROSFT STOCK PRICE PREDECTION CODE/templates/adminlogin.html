@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div id="hero" class="hero overlay">
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator">Admin Login</h2>
+                    <form action="/adminloginNext" method="POST" > 
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="email">Name:</label>
+                                  <input type="email" name="ausername" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-20">
+                                <div class="form-group">
+                                  <label for="name">Passw ord:</label>
+                                  <input type="password" name="apassword"class="form-control" id="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green" style="background-color:black ;">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.form -->
+        </div><!-- /.hero-text -->
+    </div><!-- /.hero-content -->
+</div><!-- /.hero -->
+
+
+
+{% endblock %}
